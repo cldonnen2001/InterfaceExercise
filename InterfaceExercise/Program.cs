@@ -78,35 +78,46 @@ namespace InterfaceExercise
             //without list
             // Creatively display and organize their values
 
-            Console.WriteLine($"These are the vehicles that are for sale. {vehicles.Make}.  Descpriptions below: ");
-            Console.WriteLine($"Doors: {truck1.HowManyDoors},  Sirius: {truck1.HasSirius}, All wheel drive: {truck1.IsAllWheelDrive}, Domestic/Foreign: {truck1.IsDomestic}" +
-                $"Logo: {truck1.Logo}, Navagtion included: {truck1.NavigationType}, Trunk size: {truck1.TireSize}, Vehicle size: {truck1.TruckBedSize}");
+            Console.WriteLine($"These are the vehicles that are for sale.\n {truck1.Make}.  Descpriptions below:\n" +
+                $"  Doors: {truck1.HowManyDoors}\n  Sirius: {truck1.HasSirius}\n  All wheel drive: {truck1.IsAllWheelDrive}\n" +
+                $"  Domestic/Foreign: {truck1.IsDomestic}\n  Logo: {truck1.Logo}\n  Navagtion included: {truck1.NavigationType}\n" +
+                $"  Trunk size: {truck1.TireSize}\n  Vehicle size: {truck1.TruckBedSize}\n");
 
 
-            Console.WriteLine($"These are the vehicles that are for sale. {car1.Make}.  Descpriptions below: ");
-            Console.WriteLine($"Doors: {car1.HowManyDoors},  Sirius: {car1.HasSirius}, All wheel drive: {car1.IsAllWheelDrive}, Domestic/Foreign: {car1.IsDomestic}" +
-                 $"Logo: {car1.Logo}, Navagtion included: {car1.NavigationType}, Trunk size: {car1.TrunkSize}, Vehicle size: {car1.VehicleSize}");
+            Console.WriteLine($"{car1.Make}.  Descpriptions below:\n" +
+                $"  Doors: {car1.HowManyDoors}\n  Sirius: {car1.HasSirius}\n  All wheel drive: {car1.IsAllWheelDrive}\n, Domestic/Foreign: {car1.IsDomestic}\n" +
+                $"  Logo: {car1.Logo}\n, Navagtion included: {car1.NavigationType}\n, Trunk size: {car1.TrunkSize}\n, Vehicle size: {car1.VehicleSize}\n");
 
-            Console.WriteLine($"These are the vehicles that are for sale. {suv1.Make}.  Descpriptions below: ");
-            Console.WriteLine($"Doors: {suv1.HowManyDoors},  Sirius: {suv1.HasSirius}, All wheel drive: {suv1.IsAllWheelDrive}, Domestic/Foreign: {suv1.IsDomestic}" +
-                $"Logo: {suv1.Logo}, Navagtion included: {suv1.NavigationType}, Trunk size: {suv1.RowsOfSeats}, Vehicle size: {suv1.TowHitch}");
+            Console.WriteLine($"  {suv1.Make}.  Descpriptions below:\n  Doors: {suv1.HowManyDoors}\n  Sirius: {suv1.HasSirius}\n  All wheel drive: {suv1.IsAllWheelDrive}\n" +
+                $"  Domestic/Foreign: {suv1.IsDomestic}\n  Logo: {suv1.Logo}\n  Navagtion included: {suv1.NavigationType}\n  Trunk size: {suv1.RowsOfSeats}\n" +
+                $"  Vehicle size: {suv1.TowHitch}\n");
 
 
 
-           // List<IVehicle> vehicles = new List<IVehicle>();
+            // below not works
+            //List<IVehicle> vehicles = new List<IVehicle>();
+            //  vehicles.Add(truck1);
+            //  vehicles.Add(car1);
+            //  vehicles.Add(suv1);
 
-           // vehicles.Add(truck1);
-           // vehicles.Add(car1);
-           // vehicles.Add(suv1);
-
-           //foreach (var vehicle in vehicles)
-           //{
-           //    Creatively display and organize their values
-
-           //     Console.WriteLine($"These are the vehicles that are for sale. {vehicle.Make}.  Descpriptions below: ");
-           //     Console.WriteLine($"Doors: {vehicle.HowManyDoors},  Sirius: {vehicle.HasSirius}, All wheel drive: {vehicle.IsAllWheelDrive},");
-           //          Domestic/Foreign: {vehicle.IsDomestic} Logo: {vehicle.Logo}, Navagtion included: {vehicle.NavigationType}, Trunk size: {vehicle.TireSize}, Vehicle size: {vehicle.TruckBedSize}");
-           //}
+            //foreach (var vehicle in vehicles)
+            //{
+          
+            //     Console.WriteLine($"These are the vehicles that are for sale. {vehicle.Make}.  Descpriptions below: ");
+            //     Console.WriteLine($"Doors: {vehicle.HowManyDoors},  Sirius: {vehicle.HasSirius}, All wheel drive: {vehicle.IsAllWheelDrive}," +
+            //    this line not work $"  Domestic/Foreign: {vehicle.IsDomestic} Logo: {vehicle.Logo}, Navagtion included: {vehicle.NavigationType}, Trunk size: {vehicle.TireSize}, Vehicle size: {vehicle.TruckBedSize}");
+            ////
+            //   or ---
+            //  vehicle.Make();
+            //  vehicle.HowManyDoors();
+            //  vehicle.HasSirius();
+            //  vehicle.IsAllWheelDrive();
+            //  vehicle.IsDomestic();
+            //  vehicle.Logo();
+            //  vehicle.NavigationType();
+            //  vehicle.TireSize():
+            //  vehicle.TruckBedSize();
+            }
 
         }
     }
